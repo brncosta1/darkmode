@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+    --trono-img: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/trono-preto.png"); 
+  }
+  
+  .dark-mode {
+    --bg-cor: black;
+    --fonte-cor: #ffffff;
+    --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
+    --trono-img: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/trono-branco.png");
+  }
+  
+  body {
+    background: var(--bg-cor);
+    color: var(--fonte-cor);
+    font-family: 'Cinzel', serif;
+    font-size: 38px;
+    user-select: none; 
+    transition: 2s;
+    user-select: none;
+  }
+  
+  .container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .mudar-tema {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    background-image: var(--label-icon); 
+    background-repeat: no-repeat;
+    padding: 67px;
+    cursor: pointer; 
+  }
+  
+  #btn {
+    display: none;
+  }
+  
+  .trono {
+    background-image: var(--trono-img);
+    background-size: cover;
+    width: 450px;
+    height: 350px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 10%;
+    right: 3%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .texto {
+    padding-top: 3rem;
+  }
+
+  @media all and (max-width: 1400px) and (min-width: 1000px){
+    .trono {
+        right: 5%;
+  }
+}
+
+@media all and (max-width: 1000px) and (min-width: 750px){
+    .trono {
+        right: 7%;
+  }
+}
+
+@media all and (max-width: 750px) and (min-width: 550px){
+    .trono {
+        right: 9%;
+  }
+}
+
+@media all and (max-width: 550px) and (min-width: 500px){
+    .trono {
+        right: 11%;
+  }
+}
+
+@media all and (max-width: 500px) and (min-width: 400px){
+    .trono {
+        right: 14%;
+  }
+}
+
+@media all and (max-width: 400px) and (min-width: 300px){
+    .trono {
+        right: 18%;
+  }
+}
